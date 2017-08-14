@@ -2,7 +2,8 @@ const express = require('express');
 const router = express.Router();
 const passport = require('passport');
 const LocalStrategy = require('passport-local').Strategy;
-const db = mongojs('mongodb://lam:lam@ds161262.mlab.com:61262/gamingblog', ['users']);
+const mongojs = require('mongojs');
+const db = mongojs('mongodb://lam:lam@ds161262.mlab.com:61262/gamingblog', ['blogs']);
 
 const User = require('../models/user');
 

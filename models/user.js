@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
 const bcrypt = require('bcryptjs');
-const db = mongojs('mongodb://lam:lam@ds161262.mlab.com:61262/gamingblog', ['users']);
+const mongojs = require('mongojs');
+const db = mongojs('mongodb://lam:lam@ds161262.mlab.com:61262/gamingblog', ['blogs']);
 
 // User Schema
 const UserSchema = mongoose.Schema({
