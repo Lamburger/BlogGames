@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 const bcrypt = require('bcryptjs');
+const db = mongojs('mongodb://lam:lam@ds161262.mlab.com:61262/gamingblog', ['users']);
 
 // User Schema
 const UserSchema = mongoose.Schema({
@@ -31,11 +32,11 @@ module.exports.createUser = function(newUser, callback){
 
 module.exports.getUserByUsername = function(username, callback){
 	const query = {username: username};
-	User.findOne(query, callback);
+	db.user.findOne(query, callback);
 }
 
 module.exports.getUserById = function(id, callback){
-	User.findById(id, callback);
+	db.user.findById(id, callback);
 }
 
 module.exports.comparePassword = function(candidatePassword, hash, callback){
