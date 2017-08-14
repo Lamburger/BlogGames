@@ -1,0 +1,231 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Lam's Gaming Blog</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Gaming Blog" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link href="/index/css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href="/index/css/style.css" rel='stylesheet' type='text/css' />
+<script src="/index/js/jquery.min.js"></script>
+<!---- start-smoth-scrolling---->
+<script type="text/javascript" src="/index/js/move-top.js"></script>
+<script type="text/javascript" src="/index/js/easing.js"></script>
+<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+<!--start-smoth-scrolling-->
+	<!--script-->
+	<script src="/index/js/modernizr.custom.97074.js"></script>
+<script src="/index/js/jquery.chocolat.js"></script>
+		<link rel="stylesheet" href="css/chocolat.css" type="text/css" media="screen" charset="utf-8">
+		<!--light-box-files -->
+		<script type="text/javascript" charset="utf-8">
+		$(function() {
+			$('.gallery a').Chocolat();
+		});
+		</script>
+		<script type="text/javascript" src="/index/js/jquery.hoverdir.js"></script>
+</head>
+<body>
+	<!--header-top-starts-->
+	<div class="header-top">
+		<div class="container">
+			<div class="head-main">
+				<a href="/"><img src="/index/images/lamlogo.png" alt="" /></a>
+			</div>
+		</div>
+	</div>
+	<!--header-top-end-->
+	<!--start-header-->
+	<div class="header">
+		<div class="container">
+			<div class="head">
+			<div class="navigation">
+				 <span class="menu"></span> 
+					<ul class="navig">
+						{{#if user}}
+			            <li><a href="/"  class="active">Home</a></li>
+			            <li><a href="/blog">Blog</a></li>
+			            <li><a href="/about">About</a></li>
+			            <li><a href="/contact">Contact</a></li>
+			            <li><a href="/users/logout">Logout</a></li>
+			            {{else}}
+			            <li><a href="/"  class="active">Home</a></li>
+			            <li><a href="/blog">Blog</a></li>
+			            <li><a href="/about">About</a></li>
+			            <li><a href="/contact">Contact</a></li>
+			            <li><a href="/users/login">Sign In</a></li>
+			            <li><a href="/users/register">Register</a></li>
+			            {{/if}}
+					</ul>
+			</div>
+			<div class="header-right">
+				<ul>
+					<li><a href="#"><span class="fb"> </span></a></li>
+					<li><a href="#"><span class="twit"> </span></a></li>
+					<li><a href="#"><span class="pin"> </span></a></li>
+					<li><a href="#"><span class="rss"> </span></a></li>
+					<li><a href="#"><span class="drbl"> </span></a></li>
+				</ul>
+			</div>
+				<div class="clearfix"></div>
+			</div>
+			</div>
+		</div>	
+	<!-- script-for-menu -->
+	<!-- script-for-menu -->
+		<script>
+			$("span.menu").click(function(){
+				$(" ul.navig").slideToggle("slow" , function(){
+				});
+			});
+		</script>
+	<!-- script-for-menu -->
+
+	<!--welcome-starts-->
+	<div class="welcome">
+		<div class="container">
+			<div class="welcome-top heading">
+				<h3>About Me</h3>
+				<div class="welcome-bottom">
+					<img src="/index/images/lamling.jpg" alt=""/>
+					<p>I'm a junior web developer who loves to game. I created this blog to connect with other gamers and hear their opinions on their favorite or least favorite games. I love reading game reviews, and hope to read some of yours very soon! Also, feel free to contact me using the contact page. Maybe we can game together sometime!</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--welcome-end-->
+	<!--team-starts-->
+	<!--<div class="team">
+		<div class="container">
+		<div class="team-top heading">
+			<h3>OUR TEAM</h3>
+		</div>
+			<div class="team-bottom">
+				<div class="col-md-3 team-left">
+					<img src="/index/images/t-1.jpg" alt="" />
+					<h4>Rita Nelson</h4>
+					<p>Fusce at elementum diam. Integer pellentesque ultricies pharetra.</p>
+				</div>
+				<div class="col-md-3 team-left">
+					<img src="/index/images/t-2.jpg" alt="" />
+					<h4>Marta Healy</h4>
+					<p>Fusce at elementum diam. Integer pellentesque ultricies pharetra.</p>
+				</div>
+				<div class="col-md-3 team-left">
+					<img src="/index/images/t-3.jpg" alt="" />
+					<h4>John Black</h4>
+					<p>Fusce at elementum diam. Integer pellentesque ultricies pharetra.</p>
+				</div>
+				<div class="col-md-3 team-left">
+					<img src="/index/images/t-4.jpg" alt="" />
+					<h4>Kate Tompson</h4>
+					<p>Fusce at elementum diam. Integer pellentesque ultricies pharetra.</p>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div> -->
+	<!--team-end-->
+<!--slide-starts-->
+  <div class="slide">
+    <div class="container">
+      <div class="fle-xsel">
+      <ul id="flexiselDemo3">
+        <li>
+          <a href="http://www.pcgamer.com/overwatch-update/">
+            <div class="banner-1">
+              <img src="/index/images/junkhog.jpg" class="img-responsive" alt="">
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="http://na.leagueoflegends.com/en/news/store/sales/august-sales-schedule-1">
+            <div class="banner-1">
+              <img src="/index/images/810.jpg" class="img-responsive" alt="">
+            </div>
+          </a>
+        </li>     
+        <li>
+          <a href="http://www.pcgamer.com/warcraft-3-finally-gets-its-own-ptr/">
+            <div class="banner-1">
+              <img src="/index/images/wc3.jpg" class="img-responsive" alt="">
+            </div>
+          </a>
+        </li>   
+        <li>
+          <a href="http://www.pcgamer.com/google-begins-training-deepmind-ai-to-dominate-players-in-starcraft-ii/">
+            <div class="banner-1">
+              <img src="/index/images/sc2.jpg" class="img-responsive" alt="">
+            </div>
+          </a>
+        </li> 
+        <li>
+          <a href="http://www.pcgamer.com/fallout-4-game-of-the-year-edition-announced-release-date-set/">
+            <div class="banner-1">
+              <img src="/index/images/fo4.png" class="img-responsive" alt="">
+            </div>
+          </a>
+        </li> 
+        <li>
+          <a href="http://www.pcgamer.com/pubg-brings-first-person-servers-to-all-game-modes-leaderboards-incoming/">
+            <div class="banner-1">
+              <img src="/index/images/pubg.jpg" class="img-responsive" alt="">
+            </div>
+          </a>
+        </li>       
+      </ul>
+              
+               <script type="text/javascript">
+                $(window).load(function() {
+                  
+                  $("#flexiselDemo3").flexisel({
+                    visibleItems: 5,
+                    animationSpeed: 1000,
+                    autoPlay: true,
+                    autoPlaySpeed: 3000,        
+                    pauseOnHover: true,
+                    enableResponsiveBreakpoints: true,
+                    responsiveBreakpoints: { 
+                      portrait: { 
+                        changePoint:480,
+                        visibleItems: 2
+                      }, 
+                      landscape: { 
+                        changePoint:640,
+                        visibleItems: 3
+                      },
+                      tablet: { 
+                        changePoint:768,
+                        visibleItems: 3
+                      }
+                    }
+                  });
+                  
+                });
+                </script>
+                <script type="text/javascript" src="/index/js/jquery.flexisel.js"></script>
+          <div class="clearfix"> </div>
+      </div>
+    </div>
+  </div>  
+  <!--slide-end-->
+	<!--footer-starts-->
+	<div class="footer">
+		<div class="container">
+			<div class="footer-text">
+				<p>© 2017 Lam Nguyen All Rights Reserved</p>
+			</div>
+		</div>
+	</div>
+	<!--footer-end-->
+</body>
+</html>

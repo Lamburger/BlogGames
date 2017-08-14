@@ -1,0 +1,331 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Lam's Gaming Blog</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Gaming Blog" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link href="/index/css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href="/index/css/style.css" rel='stylesheet' type='text/css' />
+<script src="/index/js/jquery.min.js"></script>
+<!---- start-smoth-scrolling---->
+<script type="text/javascript" src="/index/js/move-top.js"></script>
+<script type="text/javascript" src="/index/js/easing.js"></script>
+<script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $(".scroll").click(function(event){   
+          event.preventDefault();
+          $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+        });
+      });
+    </script>
+<!--start-smoth-scrolling-->
+</head>
+<body>
+  <!--header-top-starts-->
+  <div class="header-top">
+    <div class="container">
+      <div class="head-main">
+        <a href="index.html"><img src="/index/images/lamlogo.png" alt="" /></a>
+      </div>
+    </div>
+  </div>
+  <!--header-top-end-->
+  <!--start-header-->
+  <div class="header">
+    <div class="container">
+      <div class="head">
+      <div class="navigation">
+         <span class="menu"></span> 
+          <ul class="navig">
+          {{#if user}}
+            <li><a href="/"  class="active">Home</a></li>
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li><a href="/users/logout">Logout</a></li>
+            {{else}}
+            <li><a href="/"  class="active">Home</a></li>
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li><a href="/users/login">Sign In</a></li>
+            <li><a href="/users/register">Register</a></li>
+            {{/if}}
+          </ul>
+      </div>
+      <div class="header-right">
+        
+        <ul>
+          <li><a href="#"><span class="fb"> </span></a></li>
+          <li><a href="#"><span class="twit"> </span></a></li>
+          <li><a href="#"><span class="pin"> </span></a></li>
+          <li><a href="#"><span class="rss"> </span></a></li>
+          <li><a href="#"><span class="drbl"> </span></a></li>
+        </ul>
+      </div>
+        <div class="clearfix"></div>
+      </div>
+      </div>
+    </div>  
+  <!-- script-for-menu -->
+  <!-- script-for-menu -->
+    <script>
+      $("span.menu").click(function(){
+        $(" ul.navig").slideToggle("slow" , function(){
+        });
+      });
+    </script>
+  <!-- script-for-menu -->
+  <!--about-starts-->
+  <div class="about">
+    <div class="container">
+      <div class="about-main">
+        <div class="col-md-8 about-left">
+          <div class="about-one">
+            <h3>Game of the month</h3>
+          </div>
+          <div class="about-two">
+            <img src="/index/images/league.jpg" alt="" />
+            <p>Posted by Lam on 12 Aug, 2017</p>
+            <p>I have to start off this blog strong by recognizing the most played/competitive game out there at this time. League of legends is a MOBA where you are in teams of 5.
+            Your main objective is to work together as a team to destroy the other teams base. There is a huge champion pool to select from with a wide variety of purchasable skins
+            for each champion. League of Legends is free for download, the only money you would have to spend is on the optional cosmetic items for champions.</p>
+            <p>Although League of Legends is one of the most popular multiplayer online games out right now, it is very known for its toxic communities. There are options to simply
+            ignore teammates, but this being a team game that makes it hard to communicate with toxic players to work together. If you can deal with the frustration that a toxic community brings, League of Legends is a very rewarding game that takes high skill to rank up.</p>
+            <ul>
+              <li><p>Share : </p></li>
+              <li><a href="#"><span class="fb"> </span></a></li>
+              <li><a href="#"><span class="twit"> </span></a></li>
+              <li><a href="#"><span class="pin"> </span></a></li>
+              <li><a href="#"><span class="rss"> </span></a></li>
+              <li><a href="#"><span class="drbl"> </span></a></li>
+            </ul>
+          </div>  
+          <div class="about-tre">
+            <div class="a-1">
+              <div class="col-md-6 abt-left">
+                <img src="/index/images/junkhog.jpg" alt="" />
+                <h3><a href="single.html">Overwatch update: Blizzard is testing big buffs for Junkrat, Roadhog, and Widowmaker!</a></h3>
+                <p>Blizzard is testing some big balance changes on the Overwatch PTR. Junkrat, Roadhog, Orisa, and Widowmaker have all received tweaks on the current iteration of the public test realm. Read full article <a href="http://www.pcgamer.com/overwatch-update/">here</a></p>
+                <label>August 12, 2017</label>
+              </div>
+              <div class="col-md-6 abt-left">
+                <img src="/index/images/810.jpg" alt="" />
+                <h3><a href="single.html">August Skin Sale</a></h3>
+                <p>The <a href="http://na.leagueoflegends.com/en/news/store/sales/august-sales-schedule-1">August sales</a> have been announced! Check out the link to get a peek of what's coming up for the next month!</p>
+                <label>August 12, 2017</label>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+            <div class="a-1">
+              <div class="col-md-6 abt-left">
+                <img src="/index/images/wc3.jpg" alt="" />
+                <h3><a href="single.html">Warcraft 3 gets its own PTR!</a></h3>
+                <p>Warcraft 3: Reign of Chaos was released in 2002, which for those of you who don't have a calendar handy was roughly 15 years ago. Yet it was just this week that Blizzard announced that it is finally getting its very own public test realm, which Classic Games senior producer Pete Stilwell said will initially be used to test "new Map Pools for 1's, 2's, 3's, 4's and Free-for-All. Read more <a href="http://www.pcgamer.com/warcraft-3-finally-gets-its-own-ptr/">here</a></p>
+                <label>August 12, 2017</label>
+              </div>
+              <div class="col-md-6 abt-left">
+                <img src="/index/images/sc2.jpg" alt="" />
+                <h3><a href="single.html">Google begins training DeepMind AI to dominate players in Starcraft II</a></h3>
+                <p>Time and again we have seen machines triumph over humans in various competitions, such as when IBM's Watson beat the best Jeopardy players of all time. More recently, Google's DeepMind AI defeated the world's best Go player. Now AI researchers are setting their sights on StarCraft II, one of the most popular multiplayer games of all time, Wired reports.Read more <a href="http://www.pcgamer.com/google-begins-training-deepmind-ai-to-dominate-players-in-starcraft-ii/">here</a></p>
+                <label>August 12, 2017</label>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+            <div class="a-1">
+              <div class="col-md-6 abt-left">
+                <img src="/index/images/fo4.png" alt="" />
+                <h3><a href="single.html">Fallout 4 Game of the Year Edition announced, release date set</a></h3>
+                <p>Similar to its Washington and New Vegas-set forerunners, Fallout 4 is getting an all-encompassing Game of the Year Edition. Read more <a href="http://www.pcgamer.com/fallout-4-game-of-the-year-edition-announced-release-date-set/">here</a></p>
+                <label>August 12, 2017</label>
+              </div>
+              <div class="col-md-6 abt-left">
+                <img src="/index/images/pubg.jpg" alt="" />
+                <h3><a href="single.html">PUBG brings first-person servers to all game modes, leaderboards incoming</a></h3>
+                <p>First-person servers change everything in PlayerUnknown’s Battlegrounds, so reckons Ian Birnbaum, however until now doing so meant playing exclusively in the game's Solo or Duo queues. Now, first-person servers are available in all game modes. Read more <a href="http://www.pcgamer.com/pubg-brings-first-person-servers-to-all-game-modes-leaderboards-incoming/">here</a></p>
+                <label>August 12, 2017</label>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+          </div>  
+        </div>
+        <div class="col-md-4 about-right heading">
+          <div class="abt-1">
+            <h3>ABOUT THE BLOG</h3>
+            <div class="abt-one">
+              <img src="/index/images/abtme.jpg" alt="" />
+              <p>Welcome to my Gaming Blog. Take a look around and see what users have to say about their favorite games. Register to begin posting about your favorite games! Can't wait to read your reviews and experiences.</p>
+              <div class="a-btn">
+              </div>
+            </div>
+          </div>
+
+
+
+         <!-- <div class="abt-2">
+            <h3>YOU MIGHT ALSO LIKE</h3>
+              <div class="might-grid">
+                <div class="grid-might">
+                  <a href="single.html"><img src="/index/images/c-12.jpg" class="img-responsive" alt=""> </a>
+                </div>
+                <div class="might-top">
+                  <h4><a href="single.html">Duis consectetur gravida</a></h4>
+                  <p>Nullam non magna lobortis, faucibus erat eu, consequat justo. Suspendisse commodo nibh odio.</p> 
+                </div>
+                <div class="clearfix"></div>
+              </div>  
+              <div class="might-grid">
+                <div class="grid-might">
+                  <a href="single.html"><img src="/index/images/c-10.jpg" class="img-responsive" alt=""> </a>
+                </div>
+                <div class="might-top">
+                  <h4><a href="single.html">Duis consectetur gravida</a></h4>
+                  <p> Nullam non magna lobortis, faucibus erat eu, consequat justo. Suspendisse commodo nibh odio.</p> 
+                </div>
+                <div class="clearfix"></div>
+              </div>
+              <div class="might-grid">
+                <div class="grid-might">
+                  <a href="single.html"><img src="/index/images/c-11.jpg" class="img-responsive" alt=""> </a>
+                </div>
+                <div class="might-top">
+                  <h4><a href="single.html">Duis consectetur gravida</a></h4>
+                  <p> Nullam non magna lobortis, faucibus erat eu, consequat justo. Suspendisse commodo nibh odio.</p> 
+                </div>
+                <div class="clearfix"></div>
+              </div>              
+          </div> -->
+
+
+
+         <!-- <div class="abt-2">
+            <h3>ARCHIVES</h3>
+            <ul>
+              <li><a href="single.html">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </a></li>
+              <li><a href="single.html">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</a></li>
+              <li><a href="single.html">When an unknown printer took a galley of type and scrambled it to make a type specimen book. </a> </li>
+              <li><a href="single.html">It has survived not only five centuries, but also the leap into electronic typesetting</a> </li>
+              <li><a href="single.html">Remaining essentially unchanged. It was popularised in the 1960s with the release of </a> </li>
+              <li><a href="single.html">Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing </a> </li>
+              <li><a href="single.html">Software like Aldus PageMaker including versionsof Lorem Ipsum.</a> </li>
+            </ul> 
+          </div> -->
+
+
+
+        <!--  <div class="abt-2">
+            <h3>NEWS LETTER</h3>
+            <div class="news">
+              <form>
+                <input type="text" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" />
+                <input type="submit" value="Subscribe">
+              </form>
+            </div>
+          </div> -->
+
+
+        </div>
+        <div class="clearfix"></div>      
+      </div>    
+    </div>
+  </div>
+
+
+  <!--about-end-->
+  <!--slide-starts-->
+  <div class="slide">
+    <div class="container">
+      <div class="fle-xsel">
+      <ul id="flexiselDemo3">
+        <li>
+          <a href="http://www.pcgamer.com/overwatch-update/">
+            <div class="banner-1">
+              <img src="/index/images/junkhog.jpg" class="img-responsive" alt="">
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="http://na.leagueoflegends.com/en/news/store/sales/august-sales-schedule-1">
+            <div class="banner-1">
+              <img src="/index/images/810.jpg" class="img-responsive" alt="">
+            </div>
+          </a>
+        </li>     
+        <li>
+          <a href="http://www.pcgamer.com/warcraft-3-finally-gets-its-own-ptr/">
+            <div class="banner-1">
+              <img src="/index/images/wc3.jpg" class="img-responsive" alt="">
+            </div>
+          </a>
+        </li>   
+        <li>
+          <a href="http://www.pcgamer.com/google-begins-training-deepmind-ai-to-dominate-players-in-starcraft-ii/">
+            <div class="banner-1">
+              <img src="/index/images/sc2.jpg" class="img-responsive" alt="">
+            </div>
+          </a>
+        </li> 
+        <li>
+          <a href="http://www.pcgamer.com/fallout-4-game-of-the-year-edition-announced-release-date-set/">
+            <div class="banner-1">
+              <img src="/index/images/fo4.png" class="img-responsive" alt="">
+            </div>
+          </a>
+        </li> 
+        <li>
+          <a href="http://www.pcgamer.com/pubg-brings-first-person-servers-to-all-game-modes-leaderboards-incoming/">
+            <div class="banner-1">
+              <img src="/index/images/pubg.jpg" class="img-responsive" alt="">
+            </div>
+          </a>
+        </li>       
+      </ul>
+              
+               <script type="text/javascript">
+                $(window).load(function() {
+                  
+                  $("#flexiselDemo3").flexisel({
+                    visibleItems: 5,
+                    animationSpeed: 1000,
+                    autoPlay: true,
+                    autoPlaySpeed: 3000,        
+                    pauseOnHover: true,
+                    enableResponsiveBreakpoints: true,
+                    responsiveBreakpoints: { 
+                      portrait: { 
+                        changePoint:480,
+                        visibleItems: 2
+                      }, 
+                      landscape: { 
+                        changePoint:640,
+                        visibleItems: 3
+                      },
+                      tablet: { 
+                        changePoint:768,
+                        visibleItems: 3
+                      }
+                    }
+                  });
+                  
+                });
+                </script>
+                <script type="text/javascript" src="/index/js/jquery.flexisel.js"></script>
+          <div class="clearfix"> </div>
+      </div>
+    </div>
+  </div>  
+  <!--slide-end-->
+  <!--footer-starts-->
+  <div class="footer">
+    <div class="container">
+      <div class="footer-text">
+        <p>© 2017 Lam Nguyen All Rights Reserved</p>
+      </div>
+    </div>
+  </div>
+  <!--footer-end-->
+</body>
+</html>

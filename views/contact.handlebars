@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Lam's Gaming Blog</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="gaming blog" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link href="/index/css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href="/index/css/style.css" rel='stylesheet' type='text/css' />
+<script src="/index/js/jquery.min.js"></script>
+<!---- start-smoth-scrolling---->
+<script type="text/javascript" src="/index/js/move-top.js"></script>
+<script type="text/javascript" src="/index/js/easing.js"></script>
+<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+<!--start-smoth-scrolling-->
+</head>
+<body>
+	<!--header-top-starts-->
+	<div class="header-top">
+		<div class="container">
+			<div class="head-main">
+				<a href="index.html"><img src="/index/images/lamlogo.png" alt="" /></a>
+			</div>
+		</div>
+	</div>
+	<!--header-top-end-->
+	<!--start-header-->
+	<div class="header">
+		<div class="container">
+			<div class="head">
+			<div class="navigation">
+				 <span class="menu"></span> 
+					<ul class="navig">
+						{{#if user}}
+			            <li><a href="/"  class="active">Home</a></li>
+			            <li><a href="/blog">Blog</a></li>
+			            <li><a href="/about">About</a></li>
+			            <li><a href="/contact">Contact</a></li>
+			            <li><a href="/users/logout">Logout</a></li>
+			            {{else}}
+			            <li><a href="/"  class="active">Home</a></li>
+			            <li><a href="/blog">Blog</a></li>
+			            <li><a href="/about">About</a></li>
+			            <li><a href="/contact">Contact</a></li>
+			            <li><a href="/users/login">Sign In</a></li>
+			            <li><a href="/users/register">Register</a></li>
+			            {{/if}}
+					</ul>
+			</div>
+			<div class="header-right">
+				<ul>
+					<li><a href="#"><span class="fb"> </span></a></li>
+					<li><a href="#"><span class="twit"> </span></a></li>
+					<li><a href="#"><span class="pin"> </span></a></li>
+					<li><a href="#"><span class="rss"> </span></a></li>
+					<li><a href="#"><span class="drbl"> </span></a></li>
+				</ul>
+			</div>
+				<div class="clearfix"></div>
+			</div>
+			</div>
+		</div>	
+	<!-- script-for-menu -->
+	<!-- script-for-menu -->
+		<script>
+			$("span.menu").click(function(){
+				$(" ul.navig").slideToggle("slow" , function(){
+				});
+			});
+		</script>
+	<!-- script-for-menu -->
+	<!----start-contact---->
+	<div class="contact">
+		<div class="container">
+			<div class="contact-top heading">
+				<h3>CONTACT</h3>
+			</div>
+			<div class="contact-bottom">
+				<div class="contact-text">
+					<div class="col-md-4 contact-left">
+						<h4>Please feel free to contact me via E-mail</h4>
+						<p>Email: Rival2h@gmail.com</p>
+						<div class="address">
+							<h4>Address</h4>
+							<p>Lam's Gaming Blog, 
+							<span>Victorville, CA,</span>
+							United States of America.</p>
+						</div>
+					</div>	
+					<div class="col-md-8 contact-right">
+						<input placeholder="Name" type="text" required>
+						<input placeholder="Email" type="text" required>
+						<textarea placeholder="Message" required></textarea>
+							<div class="submit-btn">
+								<form>
+									<input type="submit" value="SUBMIT">
+								</form>
+							</div>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!----end-contact---->
+	<!--footer-starts-->
+	<div class="footer">
+		<div class="container">
+			<div class="footer-text">
+				<p>© 2017 Lam Nguyen All Rights Reserved</p>
+			</div>
+		</div>
+	</div>
+	<!--footer-end-->
+</body>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Lam's Gaming Blog</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="gaming blog" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link href="/index/css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href="/index/css/style.css" rel='stylesheet' type='text/css' />
+<script src="/index/js/jquery.min.js"></script>
+<script src="/index/js/test.js"></script>
+<!-- start-smoth-scrolling -->
+<script type="text/javascript" src="/index/js/move-top.js"></script>
+<script type="text/javascript" src="/index/js/easing.js"></script>
+<script type="text/javascript">
+            jQuery(document).ready(function($) {
+                $(".scroll").click(function(event){     
+                    event.preventDefault();
+                    $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+                });
+            });
+        </script>
+<!--start-smoth-scrolling-->
+</head>
+<body>
+    <!--header-top-starts-->
+    <div class="header-top">
+        <div class="container">
+            <div class="head-main">
+                <img src="/index/images/lamlogo.png" alt="" />
+            </div>
+        </div>
+    </div>
+    <!--header-top-end-->
+    <!--start-header-->
+    <div class="header">
+        <div class="container">
+            <div class="head">
+            <div class="navigation">
+                 <span class="menu"></span> 
+                    <ul class="navig">
+                        {{#if user}}
+                        <li><a href="/"  class="active">Home</a></li>
+                        <li><a href="/blog">Blog</a></li>
+                        <li><a href="/about">About</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                        <li><a href="/users/logout">Logout</a></li>
+                        {{else}}
+                        <li><a href="/"  class="active">Home</a></li>
+                        <li><a href="/blog">Blog</a></li>
+                        <li><a href="/about">About</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                        <li><a href="/users/login">Sign In</a></li>
+                        <li><a href="/users/register">Register</a></li>
+                        {{/if}}
+                    </ul>
+            </div>
+            <div class="header-right">
+                <ul>
+                    <li><a href="#"><span class="fb"> </span></a></li>
+                    <li><a href="#"><span class="twit"> </span></a></li>
+                    <li><a href="#"><span class="pin"> </span></a></li>
+                    <li><a href="#"><span class="rss"> </span></a></li>
+                    <li><a href="#"><span class="drbl"> </span></a></li>
+                </ul>
+            </div>
+                <div class="clearfix"></div>
+            </div>
+            </div>
+        </div>  
+    <!-- script-for-menu -->
+    <!-- script-for-menu -->
+        <script>
+            $("span.menu").click(function(){
+                $(" ul.navig").slideToggle("slow" , function(){
+                });
+            });
+        </script>
+    <!-- script-for-menu -->
+    <!--start-blog-->
+
+
+
+    {{#if user}}
+  <div class="about">
+    {{#each blogs}}
+    <div class="container">
+      <div class="about-main">
+        <div class="col-md-8 about-left">
+          <div class="about-one">
+          </div>
+          <div class="about-two">
+            <img src={{url}} />
+            
+            <p class="title" contenteditable="true"> {{title}} </p>
+            <h3 class="submitblog deletepost" name="deletepost" data-id="{{ _id }}">
+            <a href="/blog">
+            <span class="label label-default">Delete Post</span>
+            </a>
+            </h3>
+              
+            <h3 class="submitblog updateblog hidden" name="updateblog" data-id="{{ _id }}">
+            <a href="/blog">
+            <span class="label label-default">Update Changes</span>
+            </a>
+            </h3>
+
+            <p class="review" contenteditable="true"> {{review}} </p>
+            <ul>
+              <li><p>Share : </p></li>
+              <li><a href="#"><span class="fb"> </span></a></li>
+              <li><a href="#"><span class="twit"> </span></a></li>
+              <li><a href="#"><span class="pin"> </span></a></li>
+              <li><a href="#"><span class="rss"> </span></a></li>
+              <li><a href="#"><span class="drbl"> </span></a></li>
+            </ul>
+          </div>
+        </div>  
+      </div>    
+    </div>
+        {{/each}}
+
+
+
+        <h2 class="submitblog">
+        <a href="/submitblog">
+        <span class="label label-default">Submit New Blog</span>
+        </a>
+        </h2>
+
+
+  </div>
+ {{else}}
+<div class="about">
+    {{#each blogs}}
+    <div class="container">
+      <div class="about-main">
+        <div class="col-md-8 about-left">
+          <div class="about-one">
+          </div>
+          <div class="about-two">
+            <img src= {{url}} />
+            <p id="title"> {{title}} </p>
+            <p id="review"> {{review}} </p>
+            <ul>
+              <li><p>Share : </p></li>
+              <li><a href="#"><span class="fb"> </span></a></li>
+              <li><a href="#"><span class="twit"> </span></a></li>
+              <li><a href="#"><span class="pin"> </span></a></li>
+              <li><a href="#"><span class="rss"> </span></a></li>
+              <li><a href="#"><span class="drbl"> </span></a></li>
+            </ul>
+          </div>
+        </div>  
+      </div>    
+    </div>
+        {{/each}}
+        <h2 class ="submitblog">
+        <a href="/submitblog">
+        <span class="label label-default">Submit New Blog</span>
+        </a>
+        </h2>
+  </div>
+ {{/if}}
+
+
+
+    <!--end-blog-->
+    <!--footer-starts-->
+    <div class="footer">
+        <div class="container">
+            <div class="footer-text">
+                <p>© 2017 Lam Nguyen All Rights Reserved</p>
+            </div>
+        </div>
+    </div>
+    <!--footer-end-->
+</body>
+</html>
