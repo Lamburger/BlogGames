@@ -33,11 +33,11 @@ module.exports.createUser = function(newUser, callback){
 
 module.exports.getUserByUsername = function(username, callback){
 	const query = {username: username};
-	db.user.findOne(query, callback);
+	db.users.findOne(query, callback);
 }
 
 module.exports.getUserById = function(id, callback){
-	db.user.findById(id, callback);
+	User.findById(id, callback);
 }
 
 module.exports.comparePassword = function(candidatePassword, hash, callback){
