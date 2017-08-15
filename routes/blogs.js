@@ -66,9 +66,9 @@ router.delete('/:id', function(req, res, next){
 
 // Update Blog
 router.put('/:id', function(req, res, next){
-    var review = req.params.data.review;
-    var url = req.params.data.url;
-    var title = req.params.data.title;
+    var review = req.body.review;
+    var url = req.body.url;
+    var title = req.body.title;
     var updBlog = {};
     
     if(title){
