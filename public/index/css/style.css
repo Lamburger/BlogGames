@@ -304,7 +304,7 @@ ul.navig li a.active{
 }
 .about-one p{
 	color:#999;
-	font-size:14px;
+	font-size:16px;
 	border-bottom:1px solid #999;
 	width:13%;
 	margin:0 auto;
@@ -327,7 +327,7 @@ ul.navig li a.active{
 	-ms-border-radius: 5px;
 }
 .about-two p{
-	font-size:14px;
+	font-size:16px;
 	font-family: 'Raleway-Regular';
 	color:#999;
 	line-height:1.8em;
@@ -386,7 +386,7 @@ ul.navig li a.active{
 }
 .abt-left h6 {
 	color: #999;
-	font-size: 13px;
+	font-size: 16px;
 	border-bottom: 1px solid #999;
 	width: 26%;
 	font-family: 'Raleway-Regular';
@@ -401,7 +401,7 @@ ul.navig li a.active{
 	color: #3d1a1b;
 }
 .abt-left p{
-	font-size: 14px;
+	font-size: 16px;
 	font-family: 'Raleway-Regular';
 	color: #999;
 	line-height: 1.8em;
@@ -415,7 +415,7 @@ ul.navig li a.active{
 }
 .abt-left label{
 	float: right;
-	font-size: 13px;
+	font-size: 16px;
 	font-family: 'Raleway-Regular';
 	color: #999;
 	margin-top: 4%;
@@ -441,7 +441,7 @@ ul.navig li a.active{
 	width: 100%;
 	color: #190608;
 	outline: none;
-	font-size: 13px;
+	font-size: 16px;
 	padding: 8px 10px;
 	border: 1px solid #190608;
 	-webkit-appearance: none;
@@ -457,7 +457,7 @@ ul.navig li a.active{
 	font-family: 'Raleway-Regular';
 	padding: 8px 1em;
 	color: #fff;
-	font-size: 14px;
+	font-size: 16px;
 	font-weight: 400;
 	display: block;
 	outline: none;
@@ -489,7 +489,7 @@ ul.navig li a.active{
 	text-align: left;
 }
 .abt-2 ul li a{
-	font-size:13px;
+	font-size:16px;
 	color:#999;
 	font-family: 'Raleway-Regular';
 }
@@ -506,7 +506,7 @@ ul.navig li a.active{
 	text-align: left;
 }
 .might-top p {
-	font-size: 13px;
+	font-size: 16px;
 	color: #999;
 	line-height: 1.8em;
 	font-family: 'Raleway-Regular';
@@ -527,7 +527,7 @@ ul.navig li a.active{
 	color: #999;
 	padding: 9px 30px;
 	border: 1px solid #999;
-	font-size: 13px;
+	font-size: 16px;
 	border-radius: 5px;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
@@ -550,7 +550,7 @@ ul.navig li a.active{
 	background: #190608;
 	padding: 9px 0px;
 	border: 1px solid #190608;
-	font-size: 15px;
+	font-size: 16px;
 	border-radius: 5px;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
@@ -567,7 +567,7 @@ ul.navig li a.active{
 	text-align:center;
 }
 .abt-one p{
-	font-size:13px;
+	font-size:16px;
 	font-family: 'Raleway-Regular';
 	color:#999;
 	line-height:1.8em;
@@ -716,7 +716,7 @@ ul.navig li a.active{
 .contact-right input[type="text"] {
 	width: 49%;
 	margin: 0px;
-	font-size: 14px;
+	font-size: 16px;
 	color: #999;
 	background: none;
 	padding: 15px 10px;
@@ -783,7 +783,7 @@ ul.navig li a.active{
 	line-height:1.6em;
 }
 .contact-left p{
-	font-size: 14px;
+	font-size: 16px;
 	font-family: 'Raleway-Regular';
 	color: #999;
 	line-height: 1.8em;
@@ -802,6 +802,7 @@ ul.navig li a.active{
 	text-align:center;
 }
 .contact-top h3{
+	margin-left:50%;
 	width:17%;
 }
 /*--contact-end--*/
@@ -835,6 +836,7 @@ h3.ghj {
 .gallery-top h3,.welcome-top h3,.team-top h3{
 	width: 17%;
 	text-align: center;
+	margin-left:40%;
 }
 .gallery-top{
 	margin-bottom: 3%;
@@ -902,7 +904,7 @@ h3.ghj {
 	text-align:center;
 }
 .welcome-bottom p {
-	font-size: 14px;
+	font-size: 16px;
 	font-family: 'Raleway-Regular';
 	color: #999;
 	line-height: 1.8em;
@@ -942,7 +944,7 @@ h3.ghj {
 	color: #3d1a1b;
 }
 .team-left p{
-	font-size: 14px;
+	font-size: 16px;
 	font-family: 'Raleway-Regular';
 	color: #999;
 	line-height: 1.8em;
@@ -1088,7 +1090,7 @@ ul.navig {
     font-size: 13px;
 }
 .contact-right input[type="text"]:nth-child(2) {
-    margin-left: 7px;
+    margin-left: 1px;
 }
 .contact-right input[type="text"] {
     font-size: 13px;
@@ -1594,7 +1596,7 @@ ul.navig {
     top: 144%;
 }
 .contact-right input[type="text"]:nth-child(2) {
-    margin-left: 4px;
+    margin-left: 1px;
 }
 .contact-right input[type="text"] {
     font-size: 12px;
@@ -1789,7 +1791,7 @@ h2.head {
 }
 @media (max-width:320px){
 .head-main a img {
-    width: 35%;
+    width: 65%;
 }
 h3.head {
     font-size: 16px;
