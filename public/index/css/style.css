@@ -332,6 +332,7 @@ ul.navig li a.active{
 	color:#999;
 	line-height:1.8em;
 	margin-top:2%;
+	cursor: pointer;
 }
 .about-two p a{
 	color:#190608;
